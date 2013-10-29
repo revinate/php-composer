@@ -509,7 +509,7 @@ class Pubnub {
 
         curl_close($ch);
 
-        $JSONdecodedResponse = json_decode($output, true, 512, JSON_BIGINT_AS_STRING);
+        $JSONdecodedResponse = json_decode($output, true);
 
         if ($JSONdecodedResponse != null) {
             return $JSONdecodedResponse;
